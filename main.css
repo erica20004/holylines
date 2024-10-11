@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #EDD1A9;
+    overflow: hidden;
+}
+
+#container{
+    border-radius: 20px;
+    position: absolute;
+    border:none;
+    width: 80vw;
+    height: 93vh;
+    left: 10%;
+    top: 6%;
+    background-color: white;
+}
+#img{
+    width: 80vw;
+    height: 80vh;
+    top: 7%;
+}
+
+#text{
+    position: relative;
+    font-size: 400%;
+    top: 3%;
+    left: 33%;
+}
+#txtverse{
+    border: none;
+    position: relative;
+    bottom: 27%;
+    left: 38%;
+    width: 18vw;
+    height: 6vh;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#btnsearch{
+    font-size: 100%;
+     border: none;
+    position: relative;
+    bottom: 20%;
+    left: 22%;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: white;
+}
+#previewContainer{
+    border-radius: 20px;
+    position: relative;
+    border:none;
+    width: 45vw;
+    height: 34vh;
+    bottom: 75%;
+    left: 22%;
+    background-color: white;
+}
+#reference{
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+    position: relative;
+    bottom: 110%;
+    left: 43%;
+    font: size 20px;;
+    width: 40vw;
+    height: 10vh;
+}
+#preview{
+    font-size: 150%;
+    width: 35vw;
+    height:25vh ;
+    border:none;
+    position: relative;
+    left: 28%;
+    bottom: 110%;
+    text-align: center;
+}
+
+.loader {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+  }
+  .screen{
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+    background-color:white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    margin-top: 18%;
+    border-radius: 300px;
+  }
+  .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid black;
+    animation: prixClipFix 2s linear infinite ;
+  }
+
+  @keyframes rotate {
+    100%   {transform: rotate(360deg)}
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }
